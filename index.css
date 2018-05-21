@@ -1,0 +1,500 @@
+#music {
+    opacity: 0;
+}
+
+#page1 { 
+    width: 1090px;
+    height: 770px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+   
+}
+
+#bg {
+    width: 1090px;
+    height: 770px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#bushes {
+    width: 1090px;
+    height: 230px;
+    position: absolute;
+    left: 0px;
+    bottom: 100px;
+    margin: auto;
+}
+/* Bushes Animation*/
+
+#bushes:hover {
+    animation: shake 0.5s; 
+    animation-iteration-count: infinite; 
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* Cloud Animation*/
+#clouds {
+    width: 900px;
+    height: 230px;
+    position: absolute;
+    left: 70px;
+    top: 50px;
+    margin: auto;
+  -webkit-animation-name: cloud-movement;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 20s;
+
+  -moz-animation-name: cloud-movement;
+  -moz-animation-timing-function: linear;
+  -moz-animation-direction: forwards;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-duration: 20s;
+
+  animation-name: cloud-movement;
+  animation-timing-function: linear;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+}
+
+.slower {
+  -webkit-animation-duration: 11.2s;
+  -moz-animation-duration: 11.2s;
+  animation-duration: 11.2s;
+}
+
+
+@-webkit-keyframes cloud-movement {
+  0% {
+    opacity: 0.1;
+    -webkit-transform: translateX(300px);
+    -moz-transform: translateX(300px);
+    transform: translateX(300px);
+  }
+  10% {
+
+    opacity: 0.7;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-1000px);
+    -moz-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+  }
+}
+
+/* Sun Animation*/
+
+#sun {
+    width: 160px;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    margin: auto;
+     -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+
+#sun:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+#stand1 {
+    width: 650px;
+    height: 770px;
+    position: absolute;
+    margin: auto;
+    left: 210px;
+    top: 140px;
+}
+
+
+#ictop {
+    width: 190px;
+    height: 230px;
+    position: absolute;
+    left: 205px;
+    top: 13px;
+    margin: auto;
+    transition: all .2s ease-in-out;
+}
+
+#ictop:hover { transform: scale(1.1); }
+
+#begintxt {
+    width: 250px;
+    height: 230px;
+    position: absolute;
+    left: 405px;
+    bottom: -50px;
+    margin: auto; 
+    display: none;
+}
+
+//*Page2*//
+
+#page2 {
+    
+    width: 1090px;
+    height: 770px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; 
+}
+
+#bg2 {
+    width: 1090px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; 
+     display: none;
+  
+}
+
+#icmachine {
+    width: 190px;
+    height: 230px;
+    position: absolute;
+    left: 30px;
+    top: 289px;
+    margin: auto;
+   
+}
+
+#handle {
+    width: 89px;
+    height: 230px;
+    position: absolute;
+    left: 83px;
+    top: 389px;
+    margin: auto;
+    transition: 1s;
+    transition: all .8s ease-in-out;
+}
+
+#handle:hover { transform: scale(1.04); }
+
+
+
+#bowl {
+    width: 100px;
+    position: absolute;
+    left: 77px;
+    top: 540px;
+    margin: auto;
+}
+
+#tmachine {
+    width: 530px;
+    position: absolute;
+    left: 250px;
+    top: 318px;
+    margin: auto;
+   
+}
+
+#chocobut {
+    width: 56px;
+    position: absolute;
+    left: 288px;
+    top: 359px;
+    margin: auto;
+    transition: all .2s ease-in-out;
+}
+
+#chocobut:hover { transform: scale(1.1); }
+
+#sprinklebut {
+    width: 56px;
+    position: absolute;
+    left: 478px;
+    top: 359px;
+    margin: auto;
+    transition: all .2s ease-in-out;
+}
+
+#sprinklebut:hover { transform: scale(1.1); }
+
+#cherrybut {
+    width: 56px;
+    position: absolute;
+    left: 675px;
+    top: 359px;
+    margin: auto;
+    transition: all .2s ease-in-out;
+}
+
+#cherrybut:hover { transform: scale(1.1); }
+
+#hanger {
+    width: 76px;
+    position: absolute;
+    left: 795px;
+    top: 319px;
+    margin: auto;
+}
+
+#bananas {
+    width: 66px;
+    position: absolute;
+    left: 820px;
+    top: 333px;
+    margin: auto;
+}
+
+#spoon {
+    width: 25px;
+    position: absolute;
+    right: 58px;
+    top: 470px;
+    margin: auto;
+    transition: all .2s ease-in-out;
+}
+
+#spoon:hover { transform: scale(1.1); }
+
+#spooncup {
+    width: 58px;
+    position: absolute;
+    left: 995px;
+    top: 495px;
+    margin: auto;
+}
+
+/*ice creams*/
+
+#plainic {
+    width: 100px;
+    position: absolute;
+    left: 77px;
+    top: 500px;
+    margin: auto;
+    display: none;
+    transition: 2s;
+}
+
+#drip {
+    width: 15px;
+    position: absolute;
+    left: 118px;
+    top: 453px;
+    margin: auto; 
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#chocoic {
+    width: 100px;
+    position: absolute;
+    left: 270px;
+    top: 500px;
+    margin: auto;
+    transition: 2s;
+    display: none;
+    
+}
+
+#chocodrip {
+    width: 25px;
+    position: absolute;
+    left: 300px;
+    top: 440px;
+    margin: auto; 
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#sprinkleic {
+    width: 100px;
+    position: absolute;
+    left: 460px;
+    top: 500px;
+    margin: auto;
+    transition: 2s;
+    display: none;
+    
+}
+
+#sprinkles {
+    width: 30px;
+    position: absolute;
+    left: 490px;
+    top: 440px;
+    margin: auto; 
+    opacity: 0;
+    transition: opacity 1s;
+    
+}
+
+#cherryic{
+    width: 100px;
+    position: absolute;
+    left: 650px;
+    top: 500px;
+    margin: auto;
+    transition: 2s;
+    display: none;
+}
+
+#cherries {
+    width: 25px;
+    position: absolute;
+    left: 690px;
+    top: 440px;
+    margin: auto; 
+    opacity: 0;
+    transition: opacity 1s;
+    
+}
+
+#bsplit {
+    width: 100px;
+    position: absolute;
+    left: 830px;
+    top: 500px;
+    margin: auto;
+    display: none;
+}
+
+#banan1 {
+    width: 38px;
+    position: absolute;
+    left: 830px;
+    top: 333px;
+    margin: auto; 
+    transition: all 0.8s ease-in-out;
+}
+
+#banan1:hover { transform: scale(1.1); }
+
+#enjoy {
+    width: 140px;
+    position: absolute;
+    left: 910px;
+    top: 363px;
+    margin: auto;
+    display: none;
+}
+
+#instructions {
+    width: 500px;
+    position: absolute;
+    left: 280px;
+    top: 730px;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#i2 {
+    width: 500px;
+    position: absolute;
+    left: 240px;
+    top: 730px;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 1s;  
+}
+
+/*STEPS*/
+
+#step1 {
+    width: 80px;
+    height: 230px;
+    position: absolute;
+    left: 85px;
+    bottom: 25px;
+    margin: auto;
+    transition: opacity 1s;
+}
+
+#step2 {
+    width: 80px;
+    height: 230px;
+    position: absolute;
+    left: 290px;
+    bottom: 25px;
+    margin: auto; 
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#step3 {
+    width: 80px;
+    height: 230px;
+    position: absolute;
+    left: 460px;
+    bottom: 25px;
+    margin: auto; 
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#step4 {
+    width: 80px;
+    height: 230px;
+    position: absolute;
+    left: 660px;
+    bottom: 25px;
+    margin: auto; 
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#step5 {
+    width: 80px;
+    height: 230px;
+    position: absolute;
+    left: 820px;
+    bottom: 25px;
+    margin: auto; 
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#step6 {
+    width: 80px;
+    height: 230px;
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+    margin: auto; 
+    opacity: 0;
+    transition: opacity 1s;
+}
+
